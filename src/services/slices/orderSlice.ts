@@ -2,7 +2,7 @@ import { getOrderByNumberApi } from '@api';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { TOrder } from '@utils-types';
 
-type TOrderState = {
+export type TOrderState = {
   orders: TOrder[];
   orderByNumberResponse: TOrder | null;
   request: boolean;
